@@ -16,6 +16,8 @@ namespace Popeeys.PageObjects
             this.driver = driver ?? throw new ArgumentException(nameof(driver));
             PageFactory.InitElements(driver, this);
         }
+        [FindsBy(How = How.XPath, Using = "//label[@for='filter-cat-7']")]
+        private IWebElement? SelectAccessories { get; set; }
 
         [FindsBy(How = How.LinkText, Using = "Trending Ginjo Cap for Unisex")]
         private IWebElement? SelectCap { get; set; }
@@ -53,7 +55,10 @@ namespace Popeeys.PageObjects
             return new SearchResultsPage(driver);
 
         }
-        
+        public void ClickSelectAccessories()
+        {
+            SelectAccessories?.Click();
+        }
 
     }
 }

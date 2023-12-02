@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace Popeeys.TestScripts
 {
-    [TestFixture]
+    [TestFixture, Order(5)]
     internal class SmokeTests :CoreCode
     {
         [Test]

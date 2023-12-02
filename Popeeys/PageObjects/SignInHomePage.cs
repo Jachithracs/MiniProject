@@ -1,4 +1,5 @@
 ﻿using OpenQA.Selenium;
+using OpenQA.Selenium.Support.UI;
 using Popeeys.Utilities;
 using SeleniumExtras.PageObjects;
 using System;
@@ -37,16 +38,33 @@ namespace Popeeys.PageObjects
 
         public PopeesHomePage SignInClick(string email,string password)
         {
-            
+            /*
+            DefaultWait<IWebDriver> wait = new DefaultWait<IWebDriver>(driver);
+            wait.PollingInterval = TimeSpan.FromMicroseconds(100);
+            wait.Timeout = TimeSpan.FromSeconds(10);
+            wait.IgnoreExceptionTypes(typeof(NoSuchElementException));
+            wait.Message = "element not found";
+            */
+            //wait.Until(d =>EmailInputBox?.Displayed);
             EmailInputBox?.SendKeys(email);
+           // wait.Until(d => PasswordInputBox?.Displayed);
             PasswordInputBox?.SendKeys(password);
 
+            //wait.Until(d => LoginBtn?.Displayed);
             LoginBtn?.Click();          
             return new PopeesHomePage(driver);
         }
 
         public CustomerLoginPage ClickCreateCustomerAccount()
-        {        
+        {
+            /*
+            DefaultWait<IWebDriver> wait = new DefaultWait<IWebDriver>(driver);
+            wait.PollingInterval = TimeSpan.FromMicroseconds(100);
+            wait.Timeout = TimeSpan.FromSeconds(10);
+            wait.IgnoreExceptionTypes(typeof(NoSuchElementException));
+            wait.Message = "element not found";
+            */
+            //wait.Until(d => CreateNewCustomerAccount?.Displayed);
             CreateNewCustomerAccount?.SendKeys(Keys.Enter);
             return new CustomerLoginPage(driver);
         }

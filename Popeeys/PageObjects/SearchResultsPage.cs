@@ -1,4 +1,5 @@
 ﻿using OpenQA.Selenium;
+using OpenQA.Selenium.Support.UI;
 using Popeeys.Utilities;
 using SeleniumExtras.PageObjects;
 using System;
@@ -55,16 +56,19 @@ namespace Popeeys.PageObjects
 
         [FindsBy(How = How.XPath, Using = "//*[@id='shopping-cart-table']//a[1]/span/i")]
         private IWebElement? RemoveProduct { get; set; }
+
         public void ClickSortBy()
         {
             SortBy?.Click();
         }
         public void ClickCheckbox()
         {
+        
             CheckboxFrock?.Click();
         }
         public void ClickCheckboxNew()
         {
+           
             CheckboxNew?.Click();
         }
         public void ClickRating()
@@ -80,6 +84,7 @@ namespace Popeeys.PageObjects
 
         public SearchResultsPage ClickZip(string? zip)
         {
+           
             ZipInputBox?.SendKeys(zip);
             ZipInputBox?.SendKeys(Keys.Enter);
             return new SearchResultsPage(driver);
@@ -87,6 +92,8 @@ namespace Popeeys.PageObjects
 
         public void ClickSizeCheckBox()
         {
+            
+
             SizeCheckBox?.Click();
         }
 

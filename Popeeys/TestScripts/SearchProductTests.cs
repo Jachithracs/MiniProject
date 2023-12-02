@@ -10,11 +10,11 @@ using System.Threading.Tasks;
 
 namespace Popeeys.TestScripts
 {
-    [TestFixture]
+    [TestFixture, Order(2)]
     internal class SearchProductTests : CoreCode
     {
         [Test]
-        [Order(3), Category("End-to-End Testing")]
+        [Category("End-to-End Testing")]
         public void SearchFrockAndAddToCart()
         {
             string? currdir = Directory.GetParent(@"../../../")?.FullName;
@@ -28,7 +28,7 @@ namespace Popeeys.TestScripts
 
             PopeesHomePage popeesHome = new PopeesHomePage(driver);
             var signin = popeesHome.ClickCreateAccountLink();
-            Thread.Sleep(4000);
+            //Thread.Sleep(4000);
             Log.Information("Searching for product is started");
             string? currDir = Directory.GetParent(@"../../../")?.FullName;
             string? excelFilePath = currDir + "/TestData/InputData.xlsx";
@@ -46,7 +46,7 @@ namespace Popeeys.TestScripts
 
 
             }
-            Thread.Sleep(3000);
+            //Thread.Sleep(3000);
             
             string? sheetName1 = "SearchFrock";
 
@@ -59,23 +59,23 @@ namespace Popeeys.TestScripts
                 Console.WriteLine($"Search Text: {searchText}");
                 var searchResultPage = popeesHome?.TypeSearchInput(searchText);
                 TakeScreenShot();
-                Thread.Sleep(3000);
+                //Thread.Sleep(3000);
                 searchResultPage.ClickSortBy();
                 Log.Information("Sorted : New Arrivals");
-                Thread.Sleep(3000);
+               // Thread.Sleep(3000);
                 searchResultPage.ClickCheckbox();
                 Log.Information("Checkbox : Frocks & Shrugs Checked");
-                Thread.Sleep(3000);
+               //Thread.Sleep(3000);
                 searchResultPage.ClickCheckboxNew();
                 Log.Information("Checkbox : New Checked");
-                Thread.Sleep(3000);
+                //Thread.Sleep(3000);
                 searchResultPage.ClickRating();
                 Log.Information("Rating : 5* Clicked");
-                Thread.Sleep(3000);
+                //Thread.Sleep(3000);
                 TakeScreenShot();
                 searchResultPage.ClickSelectFrock();
                 Log.Information("Clicked : Details for frock Loaded");
-                Thread.Sleep(3000);
+                //Thread.Sleep(3000);
 
             }
             SearchResultsPage searchResults = new SearchResultsPage(driver);
@@ -100,19 +100,19 @@ namespace Popeeys.TestScripts
                 Log.Information("The size button is clicked");
 
                 var search = searchResults?.ClickQuantity(count);
-                Thread.Sleep(3000);
+                //Thread.Sleep(3000);
                 Log.Information("The quantity is clicked");
                 TakeScreenShot();
                 search?.ClickAddToCart();
-                Thread.Sleep(3000);
+                //Thread.Sleep(3000);
                 Log.Information("The Add to cart button is clicked");
                 Log.Information("Modal is present");
                 search?.ClickCheckoutDetails();
-                Thread.Sleep(3000);
+               // Thread.Sleep(3000);
                 Log.Information("Proceed to checkout button is clicked");
                 TakeScreenShot();
                 search?.ClickPlaceOrderBtn();
-                Thread.Sleep(3000);
+                //Thread.Sleep(3000);
                 Log.Information("Place order button is clicked");
             }
 
@@ -129,11 +129,13 @@ namespace Popeeys.TestScripts
                     string? zip = excelData?.Zip;
                     string? phonenumber = excelData?.PhoneNumber;
 
-
+                //Thread.Sleep(3000);
                 Console.WriteLine($"Address1: {address1} Address2: {address2} City: {city} Zip : {zip} Phone Number : {phonenumber}");
                 checkOut?.ClickStateDropDown();
+               // Thread.Sleep(3000);
                 checkOut?.ClickLoginButton(address1,address2,city,zip,phonenumber);
                 Log.Information("The details for buying the product is typed");
+                //Thread.Sleep(4000);
                 Log.Information("Product searched successfully");
                 TakeScreenShot();
                 try

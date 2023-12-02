@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Popeeys.TestScripts
 {
-    [TestFixture]
+    [TestFixture, Order(1)]
     internal class CustomerLoginTests : CoreCode
     {
         [Test]

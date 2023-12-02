@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Popeeys.TestScripts
 {
-    [TestFixture]
+    [TestFixture,Order(3)]
     internal class AddWishListTests : CoreCode
     {
         [Test]
@@ -46,30 +46,30 @@ namespace Popeeys.TestScripts
             }
             Log.Information("Adding the product to wishlist started");
             popees.ClickDressSelect();
-            Thread.Sleep(4000);
+            //Thread.Sleep(4000);
             Log.Information("The product Maternity is clicked");
             AddWishlistPage addWishlist = new AddWishlistPage(driver);
             addWishlist.ClickNightyCheck();
-            Thread.Sleep(4000);
+            //Thread.Sleep(4000);
             Log.Information("Checkbox Nighty is clicked");
             addWishlist.ClickSizeCheck();
-            Thread.Sleep(4000);
+           // Thread.Sleep(4000);
             Log.Information("Checkbox New is clicked");
             addWishlist.ClickRatingCheck();
-            Thread.Sleep(4000);
+            //Thread.Sleep(4000);
             Log.Information("Checkbox Rating is clicked");
             TakeScreenShot();
             addWishlist.ClickSelectedDress();
-            Thread.Sleep(4000);
+            //Thread.Sleep(4000);
             Log.Information("The product available is clicked");
             addWishlist.ClickAddWishlist();
-            Thread.Sleep(4000);
+            //Thread.Sleep(4000);
             Log.Information("The Add to Wishlist option is clicked");
             addWishlist.ClickViewAccount();
-            Thread.Sleep(4000);
+            //Thread.Sleep(4000);
             Log.Information("Click the My Account button to view the wishlist page");
             addWishlist.ClickViewWishlist();
-            Thread.Sleep(4000);
+            //Thread.Sleep(4000);
             Log.Information("The product added in the wishlist is visible");
             TakeScreenShot();
             try

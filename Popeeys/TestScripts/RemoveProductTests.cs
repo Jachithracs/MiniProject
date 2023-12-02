@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Popeeys.TestScripts
 {
-    [TestFixture]
+    [TestFixture, Order(4)]
     internal class RemoveProductTests : CoreCode
     {
         [Test]
@@ -42,27 +42,29 @@ namespace Popeeys.TestScripts
                 Console.WriteLine($"Email: {email}, Password: {password}");
                 var popees2=signin.SignInClick(email, password);
                 popees2?.ClickSelectFrock();
-                Thread.Sleep(2000);
+                //Thread.Sleep(2000);
                 Log.Information("The product for boys button clicked");
                 
             }
             RemoveProductPage removeProduct = new RemoveProductPage(driver);
+            removeProduct?.ClickSelectAccessories();
+            //Thread.Sleep(3000);
             removeProduct?.ClickSelectAddToCart();
-            Thread.Sleep(3000);
+            //Thread.Sleep(3000);
             Log.Information("Product is addded to cart");
             removeProduct?.ClickSelectColour();
-            Thread.Sleep(3000);
+            //Thread.Sleep(3000);
             Log.Information("Colour for the product is selected");
             removeProduct?.ClickSelectAddCart();
-            Thread.Sleep(3000);
+            //Thread.Sleep(3000);
             Log.Information("The product is Added to cart clicked");
             TakeScreenShot();
             var remove=removeProduct?.ClickCheckoutDetails();
             TakeScreenShot();
-            Thread.Sleep(3000);
+            //Thread.Sleep(3000);
 
             remove?.ClickRemoveProduct();
-            Thread.Sleep(3000);
+            //Thread.Sleep(3000);
             Log.Information("The product added in the cart is removed");
             TakeScreenShot();
             try
