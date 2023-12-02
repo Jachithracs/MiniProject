@@ -1,0 +1,3 @@
+2023-12-02 15:37:38.376 +05:30 [INF] New Borns Clicked
+2023-12-02 15:37:39.101 +05:30 [INF] Logo Checked Successfully
+2023-12-02 15:37:39.599 +05:30 [INF] Test passed for Logo Checking and Refreshing

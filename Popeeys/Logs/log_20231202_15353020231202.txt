@@ -1,0 +1,10 @@
+2023-12-02 15:35:44.891 +05:30 [INF] Adding the product to wishlist started
+2023-12-02 15:35:53.356 +05:30 [INF] The product Maternity is clicked
+2023-12-02 15:35:57.524 +05:30 [INF] Checkbox Nighty is clicked
+2023-12-02 15:36:01.606 +05:30 [INF] Checkbox New is clicked
+2023-12-02 15:36:05.701 +05:30 [INF] Checkbox Rating is clicked
+2023-12-02 15:36:16.659 +05:30 [INF] The product available is clicked
+2023-12-02 15:36:20.810 +05:30 [INF] The Add to Wishlist option is clicked
+2023-12-02 15:36:24.945 +05:30 [INF] Click the My Account button to view the wishlist page
+2023-12-02 15:36:31.927 +05:30 [INF] The product added in the wishlist is visible
+2023-12-02 15:36:32.145 +05:30 [INF] Test passed for My WishList

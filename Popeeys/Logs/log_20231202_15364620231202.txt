@@ -1,0 +1,7 @@
+2023-12-02 15:36:46.864 +05:30 [INF] Removing the product test started
+2023-12-02 15:36:58.257 +05:30 [INF] The product for boys button clicked
+2023-12-02 15:37:04.604 +05:30 [INF] Product is addded to cart
+2023-12-02 15:37:07.952 +05:30 [INF] Colour for the product is selected
+2023-12-02 15:37:11.100 +05:30 [INF] The product is Added to cart clicked
+2023-12-02 15:37:27.216 +05:30 [INF] The product added in the cart is removed
+2023-12-02 15:37:27.464 +05:30 [INF] Test passed for Product Removing from Cart

@@ -1,0 +1,6 @@
+2023-12-02 15:33:33.005 +05:30 [INF] Creating new customer Account Started
+2023-12-02 15:33:37.996 +05:30 [INF] Creating Customer Account Link Clicked
+2023-12-02 15:33:41.780 +05:30 [INF] Creating new customer Account Clicked
+2023-12-02 15:33:41.902 +05:30 [INF] The details for creating account details selected
+2023-12-02 15:33:42.755 +05:30 [INF] Creating Customer Account Completed
+2023-12-02 15:33:43.061 +05:30 [INF] Test passed for Create Account

@@ -1,0 +1,2 @@
+2023-12-02 15:37:43.834 +05:30 [INF] Create Account link clicked
+2023-12-02 15:37:44.129 +05:30 [INF] Test passed for Customer Login

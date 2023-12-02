@@ -1,0 +1,12 @@
+2023-12-02 15:34:07.463 +05:30 [INF] Searching for product is started
+2023-12-02 15:34:25.819 +05:30 [INF] Sorted : New Arrivals
+2023-12-02 15:34:28.938 +05:30 [INF] Checkbox : Frocks & Shrugs Checked
+2023-12-02 15:34:32.070 +05:30 [INF] Checkbox : New Checked
+2023-12-02 15:34:35.154 +05:30 [INF] Rating : 5* Clicked
+2023-12-02 15:34:45.021 +05:30 [INF] Clicked : Details for frock Loaded
+2023-12-02 15:34:51.115 +05:30 [INF] The size button is clicked
+2023-12-02 15:34:54.272 +05:30 [INF] The quantity is clicked
+2023-12-02 15:34:57.757 +05:30 [INF] The Add to cart button is clicked
+2023-12-02 15:34:57.759 +05:30 [INF] Modal is present
+2023-12-02 15:35:06.505 +05:30 [INF] Proceed to checkout button is clicked
+2023-12-02 15:35:15.072 +05:30 [INF] Place order button is clicked
